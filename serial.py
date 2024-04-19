@@ -5,9 +5,9 @@ PuertoSerie = serial.Serial('COM6', 9600)
 data = input("Introduce un valor:  ")
 if (data == '1'):
     PuertoSerie.write(b'1')
-    print(" LED Encendido ")
+    print("LED Encendido")
 elif (data == '0'):
     PuertoSerie.write(b'0')
-    print(" LED Apagado ")
+    print("LED Apagado")
 
 PuertoSerie.close()
